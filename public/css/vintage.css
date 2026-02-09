@@ -1,0 +1,96 @@
+:root {
+    --v-cream: #FDFBF7;
+    --v-brown: #5D4037;
+    --v-brown-light: #8D6E63;
+    --v-gold: #D4A373;
+    --v-green: #6B8E23;
+    --v-red: #C0392B;
+    --v-text: #3E2723;
+    --v-font-head: 'Merriweather', serif;
+    --v-font-body: 'Lato', sans-serif;
+}
+
+body {
+    background-color: var(--v-cream) !important;
+    color: var(--v-text) !important;
+    font-family: var(--v-font-body) !important;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: var(--v-font-head) !important;
+    color: var(--v-brown) !important;
+}
+
+/* Sidebar & Header */
+.navbar, .navbar-vertical {
+    background-color: #fff !important;
+    border-right: 1px solid rgba(93, 64, 55, 0.1) !important;
+    box-shadow: 2px 0 10px rgba(93, 64, 55, 0.05);
+}
+
+.navbar-brand-image {
+    filter: sepia(100%) hue-rotate(320deg) saturate(50%);
+}
+
+.nav-link {
+    color: var(--v-brown) !important;
+    font-weight: 600;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--v-gold) !important;
+    background-color: rgba(212, 163, 115, 0.1);
+    border-radius: 8px;
+}
+
+/* Cards */
+.card {
+    border: none !important;
+    border-radius: 16px !important;
+    box-shadow: 0 4px 12px rgba(93, 64, 55, 0.08) !important;
+    background-color: #fff;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.card-header {
+    background-color: transparent !important;
+    border-bottom: 2px dashed rgba(93, 64, 55, 0.1) !important;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--v-brown) !important;
+    border-color: var(--v-brown) !important;
+    border-radius: 8px !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--v-brown-light) !important;
+}
+
+.btn-success {
+    background-color: var(--v-green) !important;
+    border-color: var(--v-green) !important;
+}
+
+/* Forms */
+.form-control {
+    border: 2px solid rgba(93, 64, 55, 0.2) !important;
+    border-radius: 8px !important;
+    background-color: #fff;
+}
+
+.form-control:focus {
+    border-color: var(--v-gold) !important;
+    box-shadow: 0 0 0 0.25rem rgba(212, 163, 115, 0.25) !important;
+}
+
+/* Auth Page Specific */
+.auth-card {
+    border: 2px solid var(--v-brown) !important;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%235d4037' fill-opacity='0.05' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+}
